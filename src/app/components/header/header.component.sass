@@ -1,0 +1,67 @@
+$main: #FFF159
+$black: #333333
+$white: #ffffff
+$gray: #666666
+
+header 
+	background-color: $main
+	width: 100vw
+	height: 65px
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1)
+
+.nav-logo 
+	background-image: url('https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__large_plus.png')
+	height: 35px
+	top: 15px
+	width: 134px
+	background-repeat: no-repeat
+	overflow: hidden
+	text-indent: -999px
+	position: absolute
+	left: calc(15% - 40px)
+
+.nav-search 
+	color: $black
+	font-size: 13px
+	font-weight: 400
+	box-sizing: border-box
+	top: 12px
+	height: 56px
+	position: relative
+	left: 45%
+	max-width: 45%
+	&-input 
+		color: $black
+		font-size: 16px
+		width: 100%
+		margin: 0
+		position: relative
+		box-sizing: border-box
+		padding: 7px 60px 9px 15px
+		border-radius: 2px
+		background-color: $white
+		border: 0 rgba(0, 0, 0, 0.2)
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+		height: 39px
+		outline: none
+	
+	&-btn 
+		box-sizing: border-box
+		position: absolute
+		font-size: 22px
+		color: $gray
+		border-radius: 0 2px 2px 0
+		width: 46px
+		border: 0 rgba(0, 0, 0, 0.2)
+		background-color: $white
+		right: 0px
+		height: 39px
+		padding-top: 2px
+		cursor: pointer
+		svg 
+			top: 5px
+			left: 8px
+			position: relative
+		
+	
+

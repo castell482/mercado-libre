@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="card-image">
+            <img src="{{data.items.picture}}" alt="image">
+        </div>
+        <div class="description">
+            <br>
+            <h2> <strong>descripción del producto</strong></h2>
+            <h5>{{data.items.description}}</h5>
+        </div>
+    </div>
+    <div class="card-content">
+        <h4>{{data.items.condition}} - {{data.items.sold_quantity}} Vendidos</h4>
+        <h2> <strong>{{data.items.title}}</strong></h2>
+        <h1>$ {{data.items.price.amount | number:'3.2-5'}} </h1>
+        <button>
+            Comprar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="flex-container">
+    <div class="flex-items" *ngFor="let item of data.items">
+        <div class="container" [routerLink]="['/items', item.id]">
+            <div class="image">
+                <img src="{{item.picture}}" width="150px" height="150px">
+            </div>
+            <div class="price"><strong>$ {{item.price.amount | number}}</strong></div>
+            <div class="title">{{item.title}}</div>
+            <div class="condition">{{item.condition}}</div>
+        </div>
+    </div>
+</div>

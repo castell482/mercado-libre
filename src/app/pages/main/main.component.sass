@@ -1,0 +1,65 @@
+.flex-container
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: stretch
+    align-content: center
+    margin-top: 50px
+    margin-bottom: 25px
+
+.flex-items
+    display: block
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+    align-self: auto
+    order: 0
+    background-color: white
+    padding: 15px
+    border-bottom: 1px solid rgba(225, 225, 225, 0.5)
+    width: 65vw
+
+    strong
+        margin: 5px 15px
+        position: absolute
+
+    p
+        position: relative
+        bottom: 60px
+        left: 135px
+
+.container
+    display: grid
+    grid-template-columns: 1fr 0fr 1fr 1fr 1fr
+    grid-template-rows: 0.05fr 0.6fr 0.8fr 0.05fr
+    gap: 0px 0px
+    grid-auto-flow: row
+    cursor: pointer
+
+.image
+    grid-row-start: 2
+    grid-column-start: 1
+    grid-row-end: 4
+    grid-column-end: 3
+
+.price
+    grid-row-start: 2
+    grid-column-start: 3
+    grid-row-end: 3
+    grid-column-end: 5
+    font-size: 20px
+
+.title
+    grid-row-start: 3
+    grid-column-start: 3
+    grid-row-end: 4
+    grid-column-end: 5
+    left: 30px
+    position: relative
+
+.condition
+    grid-row-start: 2
+    grid-column-start: 5
+    grid-row-end: 3
+    grid-column-end: 6
